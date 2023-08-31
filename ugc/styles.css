@@ -209,4 +209,21 @@
     left: 0; 
   }
 
-  
+
+.buy-button {
+  display: block;
+  margin-top: 3px; 
+  background-color: #3498db00;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.buy-button:hover {
+  background-color: #5900ff;
+  transform: scale(1.05); 
+}

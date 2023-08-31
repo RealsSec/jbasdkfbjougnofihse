@@ -9,3 +9,7 @@ function showUL(ulNumber) {
   
   document.getElementById('ul' + ulNumber).style.display = 'block';
 }
+
+function openLink(url) {
+  window.open(url, '_blank');
+}
