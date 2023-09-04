@@ -226,3 +226,23 @@
   background-color: #5900ff;
   transform: scale(1.05); 
 }
+
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #6883b1 #333;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8400ff;
+  border-radius: 6px;
+  border: 3px solid #333;
+}
