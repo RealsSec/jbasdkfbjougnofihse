@@ -47,7 +47,7 @@ html {
 }
 
 body {
-    background: rgb(0, 0, 0);
+    background: rgb(3, 3, 3);
 }
 
 .back {
@@ -96,7 +96,8 @@ body {
 
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #000 !important;
+    background-image: url('https://preview.redd.it/here-is-also-apel8s-free-4k-wallpaper-including-zillakami-v0-t8b2pivpa7491.jpg?auto=webp&s=0a43d5dd21aa1823473493a658091505d8586b10');
+    background-size: cover;
     color: #fff !important
 }
 
