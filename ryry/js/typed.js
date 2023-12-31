@@ -1,1 +1,0 @@
-new Typed("#typed",{strings:["fatass","ur a cunt","c <3",],typeSpeed:50,backSpeed:100,backDelay:1e3,startDelay:120,loop:!0,showCursor:!1});
