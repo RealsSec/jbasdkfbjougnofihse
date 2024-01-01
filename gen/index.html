@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url('https://preview.redd.it/here-is-also-apel8s-free-4k-wallpaper-including-zillakami-v0-t8b2pivpa7491.jpg?auto=webp&s=0a43d5dd21aa1823473493a658091505d8586b10');
+            background-size: cover;
+        }
+
+        #inputText {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd; /* Add a border */
+            border-radius: 4px; /* Optional: Add border radius for a rounded appearance */
+            margin-bottom: 10px;
+        }
+
+        #generateButton {
+            padding: 10px 20px; /* Add padding to the button */
+            font-size: 16px;
+            background-color: #333; /* Dark grey background color */
+            color: #fff; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Optional: Add border radius for a rounded appearance */
+            cursor: pointer;
+        }
+
+        #generateButton:hover {
+            background-color: #555; /* Darker grey on hover */
+        }
+
+        #output {
+            margin-top: 20px;
+            background-color: #333; /* Dark grey background color */
+            padding: 20px; /* Padding for the box */
+            border-radius: 8px; /* Optional: Add border radius for a rounded appearance */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a modern look */
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .styled-text {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff; /* White text color */
+        }
+
+        .bold-generation {
+            font-weight: bold;
+        }
+
+        .strikethrough-generation {
+            text-decoration: line-through;
+        }
+
+        .underline-generation {
+            text-decoration: underline;
+        }
+
+        .italic-generation {
+            font-style: italic;
+        }
+
+        .color-generation {
+            color: #RR00RR; /* Replace RR with the desired color code */
+        }
+
+        .dark-purple-generation {
+            color: #5A1F5A; /* Dark Purple */
+        }
+
+        .yellow-generation {
+            color: #FFFF00; /* Yellow */
+        }
+
+        .dark-blue-generation {
+            color: #00008B; /* Dark Blue */
+        }
+
+        .blue-generation {
+            color: #0000FF; /* Blue */
+        }
+
+        .aqua-blue-generation {
+            color: #00FFFF; /* Aqua Blue */
+        }
+
+        .light-purple-generation {
+            color: #8400ff; /* Light Purple */
+        }
+
+        .white-generation {
+            color: #FFFFFF; /* White */
+        }
+
+        .trademark-generation {
+            font-size: 18px;
+            color: #e9e9e9; /* Gold color for trademark */
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function generateStyles() {
+            var inputText = document.getElementById("inputText").value;
+            var outputContainer = document.getElementById("output");
+
+            // Clear previous results
+            outputContainer.innerHTML = "";
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "⊹" + inputText + "⊹";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "★" + inputText + "★";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "☠" + inputText + "☠";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "☃" + inputText + "☃";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "♥" + inputText + "♥";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display trademark generation at the top
+            var trademarkGeneration = document.createElement("div");
+            trademarkGeneration.className = "styled-text trademark-generation";
+            trademarkGeneration.textContent = "™" + inputText + "™";
+            outputContainer.appendChild(trademarkGeneration);
+
+            // Generate and display other styles inside the modern grey box
+            // Generate and display bold generation
+            var boldGeneration = document.createElement("div");
+            boldGeneration.className = "styled-text bold-generation";
+            boldGeneration.textContent = "&l" + inputText;
+            outputContainer.appendChild(boldGeneration);
+
+            // Generate and display strikethrough generation
+            var strikethroughGeneration = document.createElement("div");
+            strikethroughGeneration.className = "styled-text strikethrough-generation";
+            strikethroughGeneration.textContent = "&m" + inputText;
+            outputContainer.appendChild(strikethroughGeneration);
+
+            // Generate and display underline generation
+            var underlineGeneration = document.createElement("div");
+            underlineGeneration.className = "styled-text underline-generation";
+            underlineGeneration.textContent = "&n" + inputText;
+            outputContainer.appendChild(underlineGeneration);
+
+            // Generate and display italic generation
+            var italicGeneration = document.createElement("div");
+            italicGeneration.className = "styled-text italic-generation";
+            italicGeneration.textContent = "&o" + inputText;
+            outputContainer.appendChild(italicGeneration);
+
+            // Generate and display color generation
+            var colorGeneration = document.createElement("div");
+            colorGeneration.className = "styled-text color-generation";
+            colorGeneration.innerHTML = "&kRR " + inputText + " &kRR";
+            outputContainer.appendChild(colorGeneration);
+
+            // Generate and display dark purple generation
+            var darkPurpleGeneration = document.createElement("div");
+            darkPurpleGeneration.className = "styled-text dark-purple-generation";
+            darkPurpleGeneration.textContent = "&5" + inputText;
+            outputContainer.appendChild(darkPurpleGeneration);
+
+            // Generate and display yellow generation
+            var yellowGeneration = document.createElement("div");
+            yellowGeneration.className = "styled-text yellow-generation";
+            yellowGeneration.textContent = "&e" + inputText;
+            outputContainer.appendChild(yellowGeneration);
+
+            // Generate and display dark blue generation
+            var darkBlueGeneration = document.createElement("div");
+            darkBlueGeneration.className = "styled-text dark-blue-generation";
+            darkBlueGeneration.textContent = "&1" + inputText;
+            outputContainer.appendChild(darkBlueGeneration);
+
+            // Generate and display blue generation
+            var blueGeneration = document.createElement("div");
+            blueGeneration.className = "styled-text blue-generation";
+            blueGeneration.textContent = "&9" + inputText;
+            outputContainer.appendChild(blueGeneration);
+
+            // Generate and display aqua blue generation
+            var aquaBlueGeneration = document.createElement("div");
+            aquaBlueGeneration.className = "styled-text aqua-blue-generation";
+            aquaBlueGeneration.textContent = "&b" + inputText;
+            outputContainer.appendChild(aquaBlueGeneration);
+
+            // Generate and display light purple generation
+            var lightPurpleGeneration = document.createElement("div");
+            lightPurpleGeneration.className = "styled-text light-purple-generation";
+            lightPurpleGeneration.textContent = "&d" + inputText;
+            outputContainer.appendChild(lightPurpleGeneration);
+
+            // Generate and display white generation
+            var whiteGeneration = document.createElement("div");
+            whiteGeneration.className = "styled-text white-generation";
+            whiteGeneration.textContent = "&f" + inputText;
+            outputContainer.appendChild(whiteGeneration);
+        }
+    </script>
+</head>
+<body>
+    <label for="inputText"></label>
+    <input type="text" id="inputText" placeholder="Type text here">
+    <button id="generateButton" onclick="generateStyles()">Generate Styles</button>
+
+    <div id="output">
+        <!-- Generated styles will be displayed inside this modern grey box -->
+    </div>
+</body>
+</html>
