@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ff93e8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1.5s forwards;
+            display: none;
+        }
+
+        #opening-container {
+            text-align: center;
+            opacity: 1;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        h1 {
+            color: #e100ff;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #heart {
+            color: #ff6f61;
+            font-size: 50px;
+        }
+
+        #buttons-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #ff00ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="opening-container">
+    <h1>Do you wanna open your gift?</h1>
+    <div id="buttons-container">
+        <button onclick="showConfirmation('yes')">Yes</button>
+        <button onclick="showConfirmation('no')">No</button>
+    </div>
+</div>
+
+<div id="container">
+    <h1>Happy Valentine Day Riley!</h1>
+    <p>Your Gift Is A 1 In A Lifetime Opitiunity, The Gift Is Never Being Able To Leave Your Boyfriend! 😍😍</p>
+    <p>Thats Right Your Stuck With Me Bitch 😚</p>
+    <p>Yours only, Matthew 💗</p>
+    <div id="heart">💝</div>
+    <img src="https://i.pinimg.com/564x/fc/f6/9d/fcf69d8fe3f9a02d4934384a758aea6f.jpg" alt="Birthday Image">
+</div>
+
+<script>
+    let yesButtonSize = { width: 120, height: 40 }; 
+
+    function showConfirmation(choice) {
+        if (choice === 'yes') {
+            document.getElementById('opening-container').style.display = 'none';
+            document.getElementById('container').style.display = 'block';
+        } else if (choice === 'no') {
+            yesButtonSize.width += 10;
+            yesButtonSize.height += 5;
+            document.getElementById('buttons-container').querySelector('button:first-child').style.width = `${yesButtonSize.width}px`;
+            document.getElementById('buttons-container').querySelector('button:first-child').style.height = `${yesButtonSize.height}px`;
+        }
+    }
+</script>
+
+</body>
+</html>
